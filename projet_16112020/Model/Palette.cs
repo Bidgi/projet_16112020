@@ -21,7 +21,7 @@ namespace projet_16112020.Model
          */
         private string _etatPalette;        
         private List<Colis> _lesColis;
-        public List<Palette> CollPalette = new List<Palette>();
+        public static List<Palette> CollPalette = new List<Palette>();
 
         #endregion
         #region Constructeur

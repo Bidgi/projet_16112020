@@ -23,7 +23,7 @@ namespace projet_16112020.Model
         private bool _indicateurQuarantaine;
         // Objet de la classe Conditionnement
         private Conditionnement _conditionnement;
-        public List<Colis> CollColis = new List<Colis>();
+        public static List<Colis> CollColis = new List<Colis>();
         #endregion
 
         #region Constructeur
