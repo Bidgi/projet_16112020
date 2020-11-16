@@ -35,9 +35,9 @@ namespace projet_16112020.Model
             return LesPalettiers[param - 1];
         }
 
-        public int getNbPalettier()
+        public int GetNbPalettier()
         {
-            return LesPalettiers.Count;
+            return LesPalettiers.Count();
         }
         #endregion
     }
