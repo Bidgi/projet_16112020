@@ -44,7 +44,7 @@ namespace projet_16112020.Model
         /// </summary>
         public void VerifEnQuarantaine()
         {
-            if(this.DatePeremption != DateTime.Now)
+            if(this.DatePeremption < DateTime.Now)
             {
                 foreach (Palette unePalettes in this.LesPalettes)
                 {
@@ -52,7 +52,7 @@ namespace projet_16112020.Model
                     unePalettes.EtatPalette = "déstockée";
                 }
             }
-            this.EtatLot = "désrockée";
+            this.EtatLot = "déstockée";
         }
         /// <summary>
         /// range chaque palettes du lot dans une alveole du secteur passe en parametre.

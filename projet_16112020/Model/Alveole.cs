@@ -50,7 +50,7 @@ namespace projet_16112020.Model
         /// <param name="unePalette"> une palettes </param>
         public void RangePalette(Palette unePalette)
         {
-            this.LesPalettes.Add(unePalette);
+            if(this.GetNbEmplacementDispo() > 0) this.LesPalettes.Add(unePalette);
         }
         /// <summary>
         /// retourne la zone de l'alveole
