@@ -48,9 +48,11 @@ namespace projet_16112020.Model
         /// retourne le poids reel du paletiier avec son chargement
         /// </summary>
         /// <returns> un reel </returns>
-        public int GetPoidsPalettier()
+        public double GetPoidsPalettier()
         {
-
+            double poidstt = 0;
+            foreach (Alveole uneAveole in LesAlveole) foreach (Palette unePalette in uneAveole.LesPalettes) foreach (Colis unColis in unePalette.LesColis) poidstt += unColis.Poids;
+            return poidstt;
         }
         /// <summary>
         ///retourne la charge (le poids) maximale autorisée sur ce palettier 
