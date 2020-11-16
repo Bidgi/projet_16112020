@@ -52,6 +52,15 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\Alveole.cs" />
+    <Compile Include="Model\Colis.cs" />
+    <Compile Include="Model\Conditionnement.cs" />
+    <Compile Include="Model\Entrepot.cs" />
+    <Compile Include="Model\Lot.cs" />
+    <Compile Include="Model\Palette.cs" />
+    <Compile Include="Model\Palettier.cs" />
+    <Compile Include="Model\Secteur.cs" />
+    <Compile Include="Model\Zone.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
