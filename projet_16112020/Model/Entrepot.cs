@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace projet_16112020.Model
 {
+    // Vincent
     class Entrepot
     {
         #region Attribut

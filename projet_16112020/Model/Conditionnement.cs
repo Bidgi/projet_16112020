@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace projet_16112020.Model
 {
-    class Conditionnement
+    public class Conditionnement
     {
         // Kylian
         #region Attributs
