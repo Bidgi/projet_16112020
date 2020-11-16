@@ -48,8 +48,7 @@ namespace projet_16112020.Model
             {
                 foreach (Palette unePalettes in this.LesPalettes)
                 {
-                    foreach (Colis unColis in unePalettes.LesColis) 
-                        unColis.mettreEnQuarantaine();
+                    foreach (Colis unColis in unePalettes.LesColis) unColis.mettreEnQuarantaine();
                     unePalettes.EtatPalette = "déstockée";
                 }
             }
@@ -60,10 +59,7 @@ namespace projet_16112020.Model
         /// </summary>
         public void StockerElementsDuLot(Secteur unSecteur)
         {
-            foreach (Palette unePalette in this.LesPalettes) 
-                foreach (Palettier unPalettier in unSecteur.LesPalettiers) 
-                    foreach (Alveole uneAlveole in unPalettier.LesAlveole) 
-                        if (uneAlveole.GetNbEmplacementDispo() > 0) uneAlveole.RangePalette(unePalette);
+            foreach (Palette unePalette in this.LesPalettes) foreach (Palettier unPalettier in unSecteur.LesPalettiers) foreach (Alveole uneAlveole in unPalettier.LesAlveole) if (uneAlveole.GetNbEmplacementDispo() > 0) uneAlveole.RangePalette(unePalette);
         }
         /// <summary>
         /// verif si l'etat du lot est bien "destockee"
