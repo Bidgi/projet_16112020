@@ -51,7 +51,7 @@ namespace projet_16112020.Model
         public double GetPoidsPalettier()
         {
             double poidstt = 0;
-            foreach (Alveole uneAveole in LesAlveole) foreach (Palette unePalette in uneAveole.LesPalettes) foreach (Colis unColis in unePalette.LesColis) poidstt += unColis.Poids;
+            foreach (Alveole uneAveole in LesAlveole) foreach (Palette unePalette in uneAveole.LesPalettes) poidstt += unePalette.getPoidsPalette();
             return poidstt;
         }
         /// <summary>
