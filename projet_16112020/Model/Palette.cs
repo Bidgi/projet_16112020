@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace projet_16112020.Model
 {
-    class Palette
+    public class Palette
     {
         // Melvin
         #region Attributs
