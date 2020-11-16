@@ -21,6 +21,7 @@ namespace projet_16112020.Model
         private bool _indicateurEnStock;
         // Permet de savoir si ce colis a été mis en quarantaine (si Quarantaine : true)
         private bool _indicateurQuarantaine;
+        // Objet de la classe Conditionnement
         Conditionnement _conditionnement;
         public List<Colis> CollColis = new List<Colis>();
         #endregion
